@@ -2,7 +2,6 @@
 
 set -x
 
-#kubectl drain master --delete-emptydir-data --force --ignore-daemonsets 
 sudo kubeadm reset
 rm -rf /etc/cni/
 sudo rm -rf /etc/cni/* 
@@ -24,5 +23,3 @@ sudo ip link delete cni0
 sudo ip link delete flannel.1 
 sudo systemctl restart conainerd && systemctl restart kubelet 
 sudo systemctl restart containerd && sudo systemctl restart kubelet 
-#sudo kubeadm init --pod-network-cidr=10.244.0.0/16
-
