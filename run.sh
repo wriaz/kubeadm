@@ -15,21 +15,29 @@ install_kubeadm(){
     echo -e "\n \n"
     sleep 3
 
-    echo -e "Installing Docker!!"
+    echo -e "${GREEN}Installing Docker!!${RESET}"
     echo -e "\n \n"
     sleep 3
     ./install-docker.sh
 
-    echo -e "Installing Kubeadm!!"
+    echo -e "${GREEN}Installing Kubeadm!!${RESET}"
     echo -e "\n \n"
     sleep 3
     ./install-kubeadm.sh
 
-    echo -e "Starting Kubeadm"
+    echo -e "${GREEN}Starting Kubeadm${RESET}"
     echo -e "\n \n"
     sleep 3
     ./start-kubeadm.sh
 
+    echo -e "${GREEN}Installing Helm${RESET}"
+    echo -e "\n \n"
+    sleep 3
+    ./install-helm.sh
+
+    echo -e "\n \n"
+    echo -e "${GREEN}Installation Complete!${RESET}"
+    echo -e "\n \n"
 }
 
  
