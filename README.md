@@ -11,4 +11,6 @@ Setup Kubeadm with following steps.
 
          cd kubeadm
          ./run.sh  
-    Script can take 5-10 minutes of more (based on your internet speed). Wait for the script to finish. Single node Kuberentes installation with kubeadm is ready. 
+Script can take 5-10 minutes or more (based on your internet speed). Wait for the script to finish. 
+
+Single node Kuberentes installation with kubeadm is ready. 
