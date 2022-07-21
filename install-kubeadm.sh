@@ -23,4 +23,4 @@ sudo apt install -y kubeadm kubelet kubectl kubernetes-cni
 sudo apt-mark hold kubelet kubeadm kubectl
 
 kubeadm config images list
-kubeadm config images pull
+sudo kubeadm config images pull
