@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MASTER_NODE='master'
+MASTER_NODE='hostname -f'
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
 
