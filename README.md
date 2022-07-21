@@ -14,3 +14,8 @@ Setup Kubeadm with following steps.
 Script can take 5-10 minutes or more (based on your internet speed). Wait for the script to finish. 
 
 Single node Kuberentes installation with kubeadm is ready. 
+
+Validate your setup by running following commands.
+
+    kubectl get nodes
+    kubectl -n kube-system get pods
