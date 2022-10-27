@@ -17,8 +17,14 @@ install_kubeadm(){
 
     echo -e "${GREEN}Installing Docker!!${RESET}"
     echo -e "\n \n"
-    sleep 3
-    ./install-docker.sh
+    if [[ which docker && docker --version ]]; then
+        echo -e "${GREEN}Docker already installed. Skipping Installation\n${RESET}"
+      # command
+    else
+      echo "Install docker"
+      sleep 3
+      ./install-docker.sh
+    fi
 
     echo -e "${GREEN}Installing Kubeadm!!${RESET}"
     echo -e "\n \n"
